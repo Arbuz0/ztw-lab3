@@ -1,0 +1,36 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  color: white;
+}
+header nav ul {
+  background: #00796B;
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+main section h1 {
+  color: #00796B;
+}
+main section p {
+  color: #212121;
+}
+
+/*# sourceMappingURL=general_styles.css.map */

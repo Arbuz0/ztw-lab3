@@ -1,0 +1,11 @@
+.scalable-image {
+  width: 450px;
+  height: 300px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.scalable-image:hover {
+  width: 675px;
+  height: 450px;
+}
+
+/*# sourceMappingURL=page_3_styles.css.map */

@@ -1,0 +1,46 @@
+@use 'consts';
+
+body {
+    font-family: consts.$font-family-base;
+}
+  
+header {
+    color: white;
+
+    nav {
+        ul {
+            background: consts.$color-primary;
+            list-style: none;
+            padding: 0;
+        
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                padding: 10px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+  
+main {
+padding: 20px;
+
+    section {
+        h1 {
+            color: consts.$color-primary;
+        }
+        
+        p {
+            color: consts.$color-text;
+        }
+    }
+}

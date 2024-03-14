@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/general_styles.scss","../scss/_consts.scss"],"names":[],"mappings":"AAEA;EACI,aCDe;;;ADInB;EACI;;AAGI;EACI,YCXI;EDYJ;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;;AAEA;EACI;;;AAQxB;EACA;;AAGQ;EACI,OCtCI;;ADyCR;EACI,OCzCC","file":"general_styles.css"}

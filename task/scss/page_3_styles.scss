@@ -1,0 +1,14 @@
+@use 'consts';
+
+$scale-factor: 1.5;
+
+.scalable-image {
+    width: consts.$base-image-width * $scale-factor;
+    height: consts.$base-image-height * $scale-factor;
+    transition: width 0.3s ease, height 0.3s ease;
+
+    &:hover {
+        width: consts.$base-image-width * $scale-factor * 1.5;
+        height: consts.$base-image-height * $scale-factor * 1.5;
+    }
+}

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona 2</title>
+    <link rel="stylesheet" href="css/general_styles.css">
+    <link rel="stylesheet" href="css/page_2_styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="page_1.html">Zmienne i Zagniezdzania</a></li>
+                <li><a href="page_2.html">Dziedziczenie i Mixins</a></li>
+                <li><a href="page_3.html">Operatory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Dziedziczenie i Mixins</h1>
+
+            <button class="primary-btn">Przycisk 1</button>
+            <button class="secondary-btn">Przycisk 2</button>
+            <button class="tertiary-btn">Przycisk 3</button>
+            <button class="quaternary-btn">Przycisk 4</button>
+
+            <div class="color-square"></div>
+        </section>
+    </main>
+</body>
+</html>
+
+<script>
+    document.querySelector('.primary-btn').addEventListener('click', function() {
+        document.querySelector('.color-square').style.backgroundColor = '#512DA8';
+    });
+    document.querySelector('.secondary-btn').addEventListener('click', function() {
+        document.querySelector('.color-square').style.backgroundColor = '#689F38';
+    });
+    document.querySelector('.tertiary-btn').addEventListener('click', function() {
+        document.querySelector('.color-square').style.backgroundColor = '#D32F2F';
+    });
+    document.querySelector('.quaternary-btn').addEventListener('click', function() {
+        document.querySelector('.color-square').style.backgroundColor = '#F57C00';
+    });
+</script>
