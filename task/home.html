@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home_styles.css">
+</head>
+<body>
+    <main>
+        <section class="content">
+            <h1>Kwadrat</h1>
+        
+            <div class="color-btns">
+                <button class="primary-btn">Przycisk 1</button>
+                <button class="secondary-btn">Przycisk 2</button>
+                <button class="tertiary-btn">Przycisk 3</button>
+                <button class="quaternary-btn">Przycisk 4</button>
+            </div>
+        
+            <div class="size-btns">
+                <button class="scale-btn scale-up-btn">Powiększ</button>
+                <button class="scale-btn scale-down-btn">Pomniejsz</button>
+            </div>
+        
+            <div class="color-square"></div>
+        </section>
+        
+    </main>
+</body>
+</html>
+
+<script>
+    document.querySelector('.primary-btn').addEventListener('click', function() {
+        document.querySelector('.color-square').style.backgroundColor = '#512DA8';
+    });
+    document.querySelector('.secondary-btn').addEventListener('click', function() {
+        document.querySelector('.color-square').style.backgroundColor = '#689F38';
+    });
+    document.querySelector('.tertiary-btn').addEventListener('click', function() {
+        document.querySelector('.color-square').style.backgroundColor = '#D32F2F';
+    });
+    document.querySelector('.quaternary-btn').addEventListener('click', function() {
+        document.querySelector('.color-square').style.backgroundColor = '#F57C00';
+    });
+
+    document.querySelector('.scale-up-btn').addEventListener('click', function() {
+        const square = document.querySelector('.color-square');
+        square.classList.add('large');
+        square.classList.remove('small');
+    });
+
+    document.querySelector('.scale-down-btn').addEventListener('click', function() {
+        const square = document.querySelector('.color-square');
+        square.classList.add('small');
+        square.classList.remove('large');
+    });
+</script>

@@ -1,0 +1,83 @@
+@use 'consts';
+@use 'buttons';
+
+body {
+    font-family: consts.$font-family-base;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: consts.$font-large;
+}
+
+.color-btns, .size-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.color-btns, .size-btns {
+    > * {
+        margin: 0 5px;
+    }
+}
+
+%button-base {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: consts.$font-small;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.color-btns {
+    .primary-btn, .secondary-btn, .tertiary-btn, .quaternary-btn {
+        @extend %button-base;
+    }
+
+    .primary-btn { @include buttons.button-colors(consts.$primary-color); }
+    .secondary-btn { @include buttons.button-colors(consts.$secondary-color); }
+    .tertiary-btn { @include buttons.button-colors(consts.$tertiary-color); }
+    .quaternary-btn { @include buttons.button-colors(consts.$quaternary-color); }
+}
+
+.size-btns {
+    .scale-btn {
+        @extend %button-base;
+        @include buttons.button-colors(consts.$scale-btn-color);
+        font-size: consts.$font-small - 2px;
+        padding: 8px 12px;
+    }
+}
+
+.color-square {
+    width: consts.$default-size; 
+    height: consts.$default-size;
+    margin: 20px 0;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    
+    &.small {
+        width: consts.$default-size * 0.5;
+        height: consts.$default-size * 0.5;
+    }
+      
+    &.large {
+        width: consts.$default-size * 1.5;
+        height: consts.$default-size * 1.5;
+    }
+}

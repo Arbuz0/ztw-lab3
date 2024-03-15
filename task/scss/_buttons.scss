@@ -1,0 +1,9 @@
+@use 'consts';
+
+@mixin button-colors($color) {
+    background-color: $color;
+    color: white;
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+}
